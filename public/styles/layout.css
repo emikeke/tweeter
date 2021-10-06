@@ -28,11 +28,90 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- .container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 90%;
-   height: auto;
-   text-align: center;
- }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  text-align: center;
+}
+
+.tweet-layout {
+  margin: 2em;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #545149;
+}
+
+.tweet-layout:hover {
+  box-shadow: 5px 5px #888888;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 50px;
+  padding: 45px;  
+}
+
+.person-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.fa-user-circle {
+  font-size: 50px;
+}
+
+.tweet-icons {
+  padding-left: 475px;
+  margin-left: 2em;
+}
+
+.person-container {
+  margin-right: auto;
+}
+
+p {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1em;
+}
+
+hr {
+  border: none;
+  border-top: 4px solid #545149;
+  width: 96%;
+}
+
+.tweeter-name {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 25px;
+}
+
+.tweeter-tagname {
+  justify-content: flex-end;
+  color: #b3b2b2;
+}
+
+h5 {
+  font-size: 16px;
+  padding-left: 29px;
+}
+
+.tweet-icons i {
+  padding-left: 15px;
+}
+
+i:hover {
+  opacity: 0.5;
+  color: #b3b2b2;
+}
