@@ -4,7 +4,7 @@ nav {
   height: 120px;
   color: #ffffff;
   font-family: 'Bungee', cursive;
-  background-color: #4056a1;
+  background-color: #5ea6d6;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,10 +15,28 @@ nav {
 .logo {
   font-family: 'Bungee', cursive;
   margin-left: 1.5em;
+  font-size: 50px;  
+}
+
+.write-word {
+  font-size: 25px;
+}
+
+.sentence-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .write-nwt {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin-right: 1.5em;
+}
+
+.write-nwt-container i {  
+  margin-right: 30px;
 }
 
 .write-nwt-container {
@@ -26,4 +44,5 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 17.5px;
 }
