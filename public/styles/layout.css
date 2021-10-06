@@ -55,7 +55,7 @@ body {
   align-items: center;
   justify-content: left;
   height: 50px;
-  padding: 45px;  
+  padding: 50px;  
 }
 
 .person-flex-box {
@@ -71,12 +71,12 @@ body {
 
 .fa-user-circle {
   font-size: 70px;
-  margin-left: -15px;
+  margin-left: -10px;
 }
 
 .tweet-icons {
   padding-left: 475px;
-  margin-left: 2em;
+  margin-left: -10px;
 }
 
 .person-container {
@@ -109,10 +109,11 @@ h5 {
 }
 
 .tweet-icons i {
-  padding-left: 15px;
+  padding-left: 35px;
+  font-size: 22px;
 }
 
-.tweet-icons i:hover {
+i:hover {
   opacity: 0.5;
   color: #b3b2b2;
 }
