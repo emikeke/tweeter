@@ -3,6 +3,7 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+
 const createTweet = function(post) {
   const $tweetername = $(
     `<section class="tweet-layout">
@@ -16,7 +17,7 @@ const createTweet = function(post) {
         <h3 class="tweeter-tagname">${post.user.handle}</h3>
       </div>
       <div class="card-body">
-        <p class="tweet">${post.content.text}</p>
+        <p class="tweet">${escape(post.content.text)}</p>
         <hr>
       </div>
       <div class="footer-container">
@@ -46,31 +47,34 @@ const loadTweets = function() {
   });
 };
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 $(document).ready(function() {
   loadTweets();
   $("#tweet-form").on("submit", function(event) {
-    console.log("hello");
     event.preventDefault();
     const $form = $(this);
     const $tweetText = $form.find("textarea");
-    console.log($tweetText);
     const $tweetLength = $tweetText.val().trim().length;
-    console.log($tweetLength);
     if ($tweetLength > 140) {
-      return alert("This tweet has too many characters, please try again!");
+      $(".error1").show();
     } else if (!$tweetLength) {
       //return alert("This tweet is empty, please try again!");
-      return alert($tweetLength);
+      $(".error2").show();
     } else {
+        $(".error1").hide();
+        $(".error2").hide();
         $.post("/tweets", $form.serialize()).then(data => {
-          console.log("inside then", data);
           $tweetText.val("");
          let newTweet = createTweet(data);
-         console.log(createTweet);
           $(".allTweets").prepend(newTweet); 
         })
         .catch(error => {
-          console.log(error);
+          return(error);
         })
       }
     });
