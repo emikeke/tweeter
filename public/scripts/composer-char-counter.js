@@ -5,6 +5,5 @@ $(document).ready(function() {
     } else {
       $('.counter').css('color', '#545149');
     }
-    console.log('ur cute');
   });
 });

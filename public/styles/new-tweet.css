@@ -27,15 +27,12 @@
   border-right: transparent;
 }
 
-.tweet-button {
-  padding-top: 0.5em;
-  width: 100%;
-  font-family: 'Bungee', cursive;
-}
-
 .button-color {
   background-color: #4056a1;
   color: white;
+  padding-top: 5px;
+  width: 100px;
+  font-family: 'Bungee', cursive;
 }
 
 .button-color:hover {

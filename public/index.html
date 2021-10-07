@@ -22,13 +22,11 @@
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    
-    <!--<script type="text/javascript" src="script.js"></script>-->
   </head>
 
   <body>
@@ -56,47 +54,21 @@
       </div>
     </header>
 
-    
-
     <main class="main">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="post" action="/tweets/" oninput="counter.value=140-$('#tweet-text').val().length">
+        <form id="tweet-form" oninput="counter.value=140-$('#tweet-text').val().length">
           <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
           <div class="tweet-container">
-            <div class="tweet-button"><button class="button-color" type="submit">Tweet</button></div>
-            <div class="counter"><output name="counter">140</output></div>
-          </div>
+          <button class="button-color" type="submit">Tweet</button>
+          <div class="counter"><output name="counter">140</output></div>
+          </div> 
         </form>
       </section>
+
+      <section class="allTweets"></section>
+
     </main>
-    <!--for loop-->
-    <!--<% list.forEach(function(tweet) { %>-->
-    <section class="tweet-layout">
-      <div class="icon-wrapper">
-        <div class="person-container">
-          <div class="person-flex-box">
-            <i class="fas fa-user-circle"></i>
-            <div class="tweeter-name">Steve</div>
-          </div>
-        </div>
-        <h3 class="tweeter-tagname">@stevejobs41</h3>
-      </div>
-      <div class="card-body">
-        <p class="tweet">Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it..</p>
-        <hr>
-      </div>
-      <div class="footer-container">
-        <h5>10 days ago</h5>
-        <div class="tweet-icons-container">
-          <div class="tweet-icons">
-            <i class="fas fa-flag"></i>
-            <i class="fas fa-retweet"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-        </div>
-      </div>
-    </section>
 
   </body>
 </html>
