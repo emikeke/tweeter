@@ -15,7 +15,8 @@
     "chance": "^1.0.2",
     "express": "^4.17.1",
     "md5": "^2.1.0",
-    "require": "^0.4.4"
+    "require": "^0.4.4",
+    "timeago.js": "^4.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
