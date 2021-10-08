@@ -6,10 +6,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 # Screenshots
 
-<img src="https://github.com/emikeke/tweeter/blob/master/docs/verticalView.png" width="3071" height="2306">
+<img src="https://github.com/emikeke/tweeter/blob/master/docs/verticalView.png" width="30" height="23">
 <img src="https://github.com/emikeke/tweeter/blob/master/docs/verticalViewError.png" width="3071" height="2306">
-<img src="https://github.com/emikeke/tweeter/blob/master/docs/horizontalView.png" width="3071" height="2306">
-<img src="https://github.com/emikeke/tweeter/blob/master/docs/horizontalViewError.png" width="3071" height="2306">
+<img src="https://github.com/emikeke/tweeter/blob/master/docs/horizontalView.png" width="30" height="2306">
+<img src="https://github.com/emikeke/tweeter/blob/master/docs/horizontalViewError.png" width="30" height="2306">
 
 ## Getting Started
 
