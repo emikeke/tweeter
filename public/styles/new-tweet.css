@@ -3,7 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.new-tweet h2 {
+  font-family: 'Bungee', cursive;
+  color: #545149;
 }
 
 .tweet-container {
@@ -11,21 +15,25 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: 55px;
 }
 
 .counter {
   font-family: 'Bungee', cursive;
+  width: 100%;
+  margin: 1em;
+  text-align: right;
 }
 
 #tweet-text {
-  width: 900px;
+  width: 100%;
   height: 100px;
   font-family: 'Source Sans Pro', sans-serif;
   border-bottom: 4px solid #545149;
-  background: transparent;
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
+  background: #ffffff;
+  border-top: 4px solid #545149;
+  border-left: 4px solid #545149;
+  border-right: 4px solid #545149;
 }
 
 .button-color {
@@ -39,4 +47,8 @@
 .button-color:hover {
   color: #4056a1;
   background-color: #ffffff;
+}
+
+.timeago {
+  width: 100%;
 }

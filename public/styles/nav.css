@@ -4,14 +4,12 @@ nav {
   height: 120px;
   color: #ffffff;
   font-family: 'Bungee', cursive;
-  background-color: #5ea6d6;
+  background-color: #4056a1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 999;
-  background-color: #5ea6d6;
-  background-image: url(http://www.transparenttextures.com/patterns/graphcoders-lil-fiber.png);
  }
 
 .logo {

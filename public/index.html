@@ -43,34 +43,37 @@
     </nav>
 
     <!-- Page-specific (main) content here -->
-    <header>
-      <div class="header-container">
-        <div class="header-image">
-          <img src="/images/profile-hex.png"> 
+    <div class="content">
+
+      <header>
+        <div class="header-container">
+          <div class="header-image">
+            <img src="/images/profile-hex.png"> 
+          </div>
+          <div class="header-name">
+            <h1>Your Name</h1>
+          </div>
         </div>
-        <div class="header-name">
-          <h1>Your Name</h1>
+      </header>
+
+      <main>
+        <div class="main-container">
+          <div class="error1">This tweet has too many characters, please try again!</div>
+          <div class="error2">This tweet is empty, please try again!</div>
+          <section class="new-tweet">
+            <h2>Compose Tweet</h2>
+            <form id="tweet-form" oninput="counter.value=140-$('#tweet-text').val().length" onsubmit="counter.value=140">
+              <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
+              <div class="tweet-container">
+              <button class="button-color" type="submit">Tweet</button>
+              <div class="counter"><output name="counter">140</output></div>
+              </div> 
+            </form>
+          </section>
+
+          <section class="allTweets"></section>
         </div>
-      </div>
-    </header>
-
-    <div class="error1">This tweet has too many characters, please try again!</div>
-    <div class="error2">This tweet is empty, please try again!</div>
-
-    <main class="main">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form id="tweet-form" oninput="counter.value=140-$('#tweet-text').val().length" onsubmit="counter.value=140">
-          <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
-          <div class="tweet-container">
-          <button class="button-color" type="submit">Tweet</button>
-          <div class="counter"><output name="counter">140</output></div>
-          </div> 
-        </form>
-      </section>
-
-      <section class="allTweets"></section>
-    </main>
-
+      </main>
+    </div>
   </body>
 </html>

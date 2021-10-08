@@ -1,20 +1,32 @@
 header {
-  background-color: #5ea6d6;
-  background-image: url(http://www.transparenttextures.com/patterns/graphcoders-lil-fiber.png);
+  background-color: #99d2f0;
+  background-image: url(https://www.transparenttextures.com/patterns/tiny-grid.png);
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */;
-  height: 400px;
-  width: 100%;
-  margin-top: 5em;
+}
+
+.header-container {
+  height: 375px;
 }
 
 .header-image {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: -40px;
+}
+
+.header-image img {
+  padding-bottom: 10px;
 }
 
 .header-name {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
+  font-family: 'Bungee', cursive;
+  font-size: 20px;
+  position: relative;
+  top: -70px
 }
