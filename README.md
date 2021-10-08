@@ -6,10 +6,12 @@ This repository is the starter code for the project: Students will fork and clon
 
 # Screenshots
 
-<img src="https://github.com/emikeke/tweeter/blob/master/docs/verticalView.png">
-<img src="https://github.com/emikeke/tweeter/blob/master/docs/verticalViewError.png">
-<img src="https://github.com/emikeke/tweeter/blob/master/docs/horizontalView.png">
-<img src="https://github.com/emikeke/tweeter/blob/master/docs/horizontalViewError.png">
+![Screenshot of tweets, zoomed in](https://github.com/emikeke/tweeter/blob/master/docs/zoomIn.png)
+![Screenshot of a layout of a responsive web design, zoomed in](https://github.com/emikeke/tweeter/blob/master/docs/zoomIn2.png)
+![Screenshot of tweets](https://github.com/emikeke/tweeter/blob/master/docs/verticalView.png)
+![Screenshot of tweet error](https://github.com/emikeke/tweeter/blob/master/docs/verticalViewError.png)
+![Screenshot of a layout of a responsive web design](https://github.com/emikeke/tweeter/blob/master/docs/horizontalView.png)
+![Screenshot of a layout of a responsive web design, error tweet](https://github.com/emikeke/tweeter/blob/master/docs/horizontalViewError.png)
 
 ## Getting Started
 
