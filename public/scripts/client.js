@@ -59,43 +59,40 @@ let resizeWindow = function() {
   let w = $(window).width();
   if(w < 1000) {
     $('.content').css('display', 'block');
+
     $('nav').css('background-color', '#99d2f0');
     $('nav').css('background-image', 'url(https://www.transparenttextures.com/patterns/tiny-grid.png)');
-    $('header').css('width', '100%');
-    $('header').css('height', '100%');
-    $('header').css('padding-bottom', '10px');
-    $('.header-image').css('margin-bottom', '30px');
-    $('header').css('margin', '0');
-    $('.main-container').css('padding', '90px');
-    $('.main-container').css('padding-top', '0');
-    $('.new-tweet').css('padding-top', '28px');
+   
     $('body').css('background-image', 'url(https://www.transparenttextures.com/patterns/nice-snow.png)');
-    $('.header-container').css('height', '375px');
-    $('header').css('border-radius', '0px');
-    $('.header-image').css('padding-top', '20px');
-    $('.header-name').css('padding-top', '0');
-    $('.header-name').css('padding-top', '0');
-    $('.header-name').css('padding-bottom', '0');
-    $('.header-name').css('padding-left', '0');
-    $('.header-name').css('padding-right', '0');
+
+    $('header').css('height', '100%');
+    $('header').css('width', '100%');
+    $('header').css('margin', '0');
+    $('header').css('border-radius', '0');
+
+    $('.header-container').css('height', '360px');
+    
+    $('.main-container').css('padding', '10px');
+
+    $('.new-tweet').css('padding-top', '28px');
   } else {
     $('.content').css('display', 'flex');
-    $('header').css('margin-top', '3.25em');
-    $('header').css('margin-right', '2em');
-    $('header').css('margin-left', '4em');
-    $('header').css('height', '15em');
+
     $('nav').css('background-color', '#4056a1');
     $('nav').css('background-image', 'none');
-    $('.main-container').css('padding', '40px');
-    $('.new-tweet').css('padding-top', '0px');
-    $('.new-tweet').css('padding-bottom', '5px');
+
     $('body').css('background-image', 'url(https://www.transparenttextures.com/patterns/nice-snow.png)');
+
+    $('header').css('height', '450px');
+    $('header').css('width', '70%');
+    $('header').css('margin', '3em');
     $('header').css('border-radius', '50px');
-    $('.header-image').css('padding-top', '20px');
-    $('.header-name').css('padding-top', '8px');
-    $('.header-name').css('padding-bottom', '0');
-    $('.header-name').css('padding-left', '0');
-    $('.header-name').css('padding-right', '0');
+
+    $('.header-container').css('height', '440px');
+    
+    $('.main-container').css('padding', '10px');
+
+    $('.new-tweet').css('padding-top', '5px');
   }
 };
 

@@ -4,20 +4,10 @@ header {
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */;
 }
 
-.header-container {
-  height: 375px;
-}
-
 .header-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: -40px;
-}
-
-.header-image img {
-  padding-bottom: 10px;
 }
 
 .header-name {
@@ -27,6 +17,4 @@ header {
   color: #ffffff;
   font-family: 'Bungee', cursive;
   font-size: 20px;
-  position: relative;
-  top: -70px
 }
