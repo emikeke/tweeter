@@ -37,7 +37,7 @@ const createTweet = function(post) {
 const renderTweets = function(tweets) {
   for (let tweet of tweets){  
     let tweetElement = createTweet(tweet);
-    $(".allTweets").append(tweetElement); 
+    $(".allTweets").prepend(tweetElement); 
   }
 };
 
@@ -54,6 +54,14 @@ const escape = function (str) {
 };
 
 $(document).ready(function() {
+  $(window).resize(function(){
+    var w = $(window).width();
+    if(w < 1500) {
+      $('.allTweets').css('height', '#def');
+    } else {
+      $('.button-color').css('background-color', '#abc');
+    }
+  });
   loadTweets();
   $("#tweet-form").on("submit", function(event) {
     event.preventDefault();
@@ -61,13 +69,13 @@ $(document).ready(function() {
     const $tweetText = $form.find("textarea");
     const $tweetLength = $tweetText.val().trim().length;
     if ($tweetLength > 140) {
-      $(".error1").show();
+      $(".error1").slideDown();
     } else if (!$tweetLength) {
       //return alert("This tweet is empty, please try again!");
-      $(".error2").show();
+      $(".error2").slideDown();
     } else {
-        $(".error1").hide();
-        $(".error2").hide();
+        $(".error1").slideUp();
+        $(".error2").slideUp();
         $.post("/tweets", $form.serialize()).then(data => {
           $tweetText.val("");
          let newTweet = createTweet(data);

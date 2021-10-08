@@ -18,7 +18,8 @@
 }
 
 #tweet-text {
-  width: 800px;
+  width: 900px;
+  height: 100px;
   font-family: 'Source Sans Pro', sans-serif;
   border-bottom: 4px solid #545149;
   background: transparent;
