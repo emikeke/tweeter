@@ -33,13 +33,13 @@ const createTweet = function(post) {
         </div>
       </div>
     </section>`);
- return $tweetername;
+  return $tweetername;
 };
 
 const renderTweets = function(tweets) {
-  for (let tweet of tweets){  
+  for (let tweet of tweets) {
     let tweetElement = createTweet(tweet);
-    $(".allTweets").prepend(tweetElement); 
+    $(".allTweets").prepend(tweetElement);
   }
 };
 
@@ -49,7 +49,7 @@ const loadTweets = function() {
   });
 };
 
-const escape = function (str) {
+const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
@@ -57,7 +57,7 @@ const escape = function (str) {
 
 let resizeWindow = function() {
   let w = $(window).width();
-  if(w < 1000) {
+  if (w < 1000) {
     $('.content').css('display', 'block');
 
     $('nav').css('background-color', '#99d2f0');
@@ -65,16 +65,16 @@ let resizeWindow = function() {
    
     $('body').css('background-image', 'url(https://www.transparenttextures.com/patterns/nice-snow.png)');
 
-    $('header').css('height', '100%');
+    $('header').css('height', '400px');
     $('header').css('width', '100%');
     $('header').css('margin', '0');
     $('header').css('border-radius', '0');
 
     $('.header-container').css('height', '360px');
     
-    $('.main-container').css('padding', '10px');
+    $('.main-container').css('padding', '70px');
 
-    $('.new-tweet').css('padding-top', '28px');
+    $('.new-tweet').css('padding-top', '0px');
   } else {
     $('.content').css('display', 'flex');
 
@@ -88,11 +88,11 @@ let resizeWindow = function() {
     $('header').css('margin', '3em');
     $('header').css('border-radius', '50px');
 
-    $('.header-container').css('height', '440px');
+    $('.header-container').css('height', '470px');
     
-    $('.main-container').css('padding', '10px');
+    $('.main-container').css('padding', '55px');
 
-    $('.new-tweet').css('padding-top', '5px');
+    $('.new-tweet').css('padding-top', '15px');
   }
 };
 
@@ -110,16 +110,13 @@ $(document).ready(function() {
     } else if (!$tweetLength) {
       $(".error2").slideDown();
     } else {
-        $(".error1").slideUp();
-        $(".error2").slideUp();
-        $.post("/tweets", $form.serialize()).then(data => {
-          $tweetText.val("");
-         let newTweet = createTweet(data);
-          $(".allTweets").prepend(newTweet); 
-        })
-        .catch(error => {
-          return(error);
-        })
-      }
-    });
+      $(".error1").slideUp();
+      $(".error2").slideUp();
+      $.post("/tweets", $form.serialize()).then(data => {
+        $tweetText.val("");
+        let newTweet = createTweet(data);
+        $(".allTweets").prepend(newTweet);
+      });
+    }
+  });
 });
